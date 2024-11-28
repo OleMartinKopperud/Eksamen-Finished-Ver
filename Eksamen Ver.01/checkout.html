@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kasse - Nettbutikk</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header id="main-header">
+            <nav>
+                <section id="header-search">
+                    <form action="#" method="GET">
+                        <input type="text" placeholder="søk her" name="query" aria-label="Søk produkter">
+                        <button type="submit">🔍</button>
+                    </form>
+                </section>
+                <ul class="nav">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="index.html#produkter">Produkter</a></li>
+                    <li><a href="index.html" class="logo">Logo</a></li>
+                    <li><a href="index.html#kategori">Kategorier</a></li>
+                    <li><a href="index.html#kontakt">Kontakt</a></li>
+                    <li><a href="#"><img src="https://via.placeholder.com/20" alt="Konto"></a></li>
+                    <li><a href="checkout.html"><img src="https://via.placeholder.com/20" alt="Handlekurv"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Kasse</h1>
+            <!-- Handlekurv seksjon -->
+            <section id="shoppingbag">
+                <h2>1. Shoppingbagen din</h2>
+                <article class="cart-item">
+                    <img src="https://picsum.photos/200" alt="Produktbilde">
+                    <div>
+                        <h3>Produktnavn</h3>
+                        <p>Pris: 199 kr</p>
+                        <p>Farge: Svart</p>
+                    </div>
+                </article>
+                <article class="cart-item">
+                    <img src="https://picsum.photos/200" alt="Produktbilde">
+                    <div>
+                        <h3>Produktnavn</h3>
+                        <p>Pris: 399 kr</p>
+                        <p>Farge: Rød</p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Dine opplysninger seksjon -->
+            <section id="customer-info">
+                <h2>2. Dine opplysninger</h2>
+                <form action="#" method="POST">
+                    <label for="first-name">Fornavn:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    
+                    <label for="last-name">Etternavn:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                    
+                    <label for="address">Gateadresse:</label>
+                    <input type="text" id="address" name="address" required>
+                    
+                    <label for="postcode">Postnummer:</label>
+                    <input type="text" id="postcode" name="postcode" required>
+                    
+                    <label for="city">Poststed:</label>
+                    <input type="text" id="city" name="city" required>
+                    
+                    <button type="submit">Lagre</button>
+                    <a href="#">Avbryt</a>
+                </form>
+            </section>
+
+            <!-- Levering seksjon -->
+            <section id="delivery">
+                <h2>3. Levering</h2>
+                <form action="#" method="POST">
+                    <label>
+                        <input type="radio" name="delivery" value="express-home" required>
+                        Ekspress hjemlevering
+                    </label>
+                    <label>
+                        <input type="radio" name="delivery" value="express-pickup">
+                        Ekspress til utleveringssted
+                    </label>
+                    <label>
+                        <input type="radio" name="delivery" value="standard">
+                        Standard hjemlevering
+                    </label>
+                </form>
+            </section>
+
+            <!-- Betaling seksjon -->
+            <section id="payment">
+                <h2>4. Betaling</h2>
+                <form action="#" method="POST">
+                    <label for="card-number">Kortnummer:</label>
+                    <input type="text" id="card-number" name="card-number" required>
+                    
+                    <label for="expiry-date">Utløpsdato:</label>
+                    <input type="text" id="expiry-date" name="expiry-date" required>
+                    
+                    <label for="cvc">CVC:</label>
+                    <input type="text" id="cvc" name="cvc" required>
+                    
+                    <p>Å betale: <strong>598 kr</strong></p>
+                    
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        Jeg godtar vilkårene
+                    </label>
+                    <label>
+                        <input type="checkbox" name="newsletter">
+                        Send meg nyhetsbrev
+                    </label>
+                    
+                    <button type="submit">Fullfør kjøp</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <section id="kontakt">
+                <h3>KONTAKT</h3>
+                <ul>
+                    <li>Adresse: B R A Veien 4, 1757 Halden</li>
+                    <li>Telefon: 69 60 80 00</li>
+                    <li>E-post: halden@hiof.no</li>
+                    <li>Åpningstider: Stenger 15:00</li>
+                </ul>
+            </section>
+            <section id="snarveier">
+                <h3>SNARVEIER</h3>
+                <ul>
+                    <li><a href="index.html#produkter">Produkter</a></li>
+                    <li><a href="index.html#kategori">Kategori</a></li>
+                    <li><a href="index.html#kontakt">Kontakt oss</a></li>
+                </ul>
+            </section>
+        </footer>
+    </body>
+</html>
