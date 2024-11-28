@@ -3,56 +3,126 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Forside - Nettbutikk</title>
+        <link href="ikoner/css/fontawesome.css" rel="stylesheet" />
+        <link href="ikoner/css/brands.css" rel="stylesheet" />
+        <link href="ikoner/css/solid.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/style.css">
+        <title>Kasse - Nettbutikk</title>
     </head>
     <body>
         <header id="main-header">
             <nav>
+                <section id="header-search">
+                    <form action="#" method="GET">
+                        <input type="text" placeholder="søk her" name="query" aria-label="Søk produkter">
+                        <button type="submit">🔍</button>
+                    </form>
+                </section>
                 <ul class="nav">
-                    <li><a href="#hjem">Hjem</a></li>
-                    <li><a href="#produkter">Produkter</a></li>
-                    <li><a href="#" class="logo">Logo</a></li>
-                    <li><a href="#kategori">Kategorier</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                    <li><a href="#"><img src="https://via.placeholder.com/20" alt="Søk"></a></li>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="index.html#produkter">Produkter</a></li>
+                    <li><a href="index.html" class="logo">Logo</a></li>
+                    <li><a href="index.html#kategori">Kategorier</a></li>
+                    <li><a href="index.html#kontakt">Kontakt</a></li>
                     <li><a href="#"><img src="https://via.placeholder.com/20" alt="Konto"></a></li>
-                    <li><a href="#"><img src="https://via.placeholder.com/20" alt="Handlekurv"></a></li>
+                    <li><a href="checkout.html"><img src="https://via.placeholder.com/20" alt="Handlekurv"></a></li>
                 </ul>
             </nav>
         </header>
-        <footer>
-            <section id="logo">
-                <img src="#" alt="Logo">
-                <p>Ingress</p>
+
+        <main>
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="index.html">Hjem</a> > 
+                <a href="index.html#kategori">Kategori</a> > 
+                <span>Produktnavn</span>
+            </nav>
+
+            <!-- Produktinformasjon -->
+            <section id="product-details">
+                <figure class="product-images">
+                    <img src="https://picsum.photos/500" alt="Hovedbilde" class="main-image">
+                    <figcaption>
+                        <img src="https://picsum.photos/100" alt="Miniatyrbilde 1">
+                        <img src="https://picsum.photos/100" alt="Miniatyrbilde 2">
+                        <img src="https://picsum.photos/100" alt="Miniatyrbilde 3">
+                    </figcaption>
+                </figure>
+
+                <article class="product-info">
+                    <header>
+                        <h1>Produktnavn</h1>
+                    </header>
+                    <p><a href="#">Merkenavn</a></p>
+                    <p>5 195 kr inkl. mva.</p>
+                    <p>Farge: <strong>beige</strong></p>
+                </article>
             </section>
 
+            <!-- Lignende produkter -->
+            <section id="related-products">
+                <h2>Lignende produkter</h2>
+                <section class="product-grid">
+                    <article>
+                        <figure>
+                            <img src="https://picsum.photos/200" alt="Produktbilde">
+                            <figcaption>
+                                <h3>Produktnavn</h3>
+                                <p>Pris: 299 kr</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="https://picsum.photos/200" alt="Produktbilde">
+                            <figcaption>
+                                <h3>Produktnavn</h3>
+                                <p>Pris: 199 kr</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="https://picsum.photos/200" alt="Produktbilde">
+                            <figcaption>
+                                <h3>Produktnavn</h3>
+                                <p>Pris: 399 kr</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="https://picsum.photos/200" alt="Produktbilde">
+                            <figcaption>
+                                <h3>Produktnavn</h3>
+                                <p>Pris: 499 kr</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </section>
+            </section>
+        </main>
+
+        <footer>
             <section id="kontakt">
-                <h3>KONTAKT</h3>
-                <ul class="nav">
+                <header>
+                    <h3>KONTAKT</h3>
+                </header>
+                <ul>
                     <li>Adresse: B R A Veien 4, 1757 Halden</li>
                     <li>Telefon: 69 60 80 00</li>
                     <li>E-post: halden@hiof.no</li>
                     <li>Åpningstider: Stenger 15:00</li>
                 </ul>
             </section>
-
             <section id="snarveier">
-                <h3>SNARVEIER</h3>
-                <ul class="nav">
-                    <li><a href="#produkter">Produkter</a></li>
-                    <li><a href="#kategori">Kategori</a></li>
-                    <li><a href="#kontakt">Kontakt oss</a></li>
-                </ul>
-            </section>
-
-            <section id="sosiale-medier">
-                <h3>SOSIALE MEDIER</h3>
-                <ul class="nav">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">Pintrest</a></li>
+                <header>
+                    <h3>SNARVEIER</h3>
+                </header>
+                <ul>
+                    <li><a href="index.html#produkter">Produkter</a></li>
+                    <li><a href="index.html#kategori">Kategori</a></li>
+                    <li><a href="index.html#kontakt">Kontakt oss</a></li>
                 </ul>
             </section>
         </footer>
