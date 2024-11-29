@@ -3,30 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="ikoner/css/fontawesome.css" rel="stylesheet" />
-        <link href="ikoner/css/brands.css" rel="stylesheet" />
-        <link href="ikoner/css/solid.css" rel="stylesheet" />
+        <meta name="description" content="Oppdag våre mest populære produkter og kategorier. Handle enkelt og sikkert på vår nettbutikk!">
+        <link href="ikoner/css/fontawesome.css" rel="stylesheet">
+        <link href="ikoner/css/brands.css" rel="stylesheet">
+        <link href="ikoner/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <title>Kasse - Nettbutikk</title>
+        <title>Produkter</title>
     </head>
     <body>
         <header id="main-header">
             <nav>
-                <section id="header-search">
+                <div id="header-search">
                     <form action="#" method="GET">
                         <input type="text" placeholder="søk her" name="query" aria-label="Søk produkter">
                         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
-                </section>
+                </div>
                 <ul class="nav">
                     <li><a href="index.html">Hjem</a></li>
                     <li><a href="index.html#produkter">Produkter</a></li>
                     <li><a href="index.html" class="logo">Logo</a></li>
                     <li><a href="index.html#kategori">Kategorier</a></li>
                     <li><a href="index.html#kontakt">Kontakt</a></li>
-                    <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                    <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></i></li>
+                    <li><a href="#" aria-label="Brukerkonto"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="#" aria-label="Favoritter"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="checkout.html" aria-label="Handlekurv"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </nav>
         </header>
@@ -36,11 +37,11 @@
             <nav class="breadcrumb">
                 <a href="index.html">Hjem</a> > 
                 <a href="index.html#kategori">Kategori</a> > 
-                <span>Produktnavn</span>
+                <a href="#"><strong>Produktnavn</strong></a>
             </nav>
 
             <!-- Produktinformasjon -->
-            <section id="product-details">
+            <div id="product-details">
                 <figure class="product-images">
                     <img src="https://picsum.photos/500" alt="Hovedbilde" class="main-image">
                     <figcaption>
@@ -52,63 +53,63 @@
 
                 <article class="product-info">
                     <header>
-                        <h1>Produktnavn</h1>
+                        <h2>Produktnavn</h2>
                     </header>
                     <p><a href="#">Merkenavn</a></p>
                     <p>5 195 kr inkl. mva.</p>
                     <p>Farge: <strong>beige</strong></p>
                 </article>
-            </section>
+            </div>
 
             <!-- Lignende produkter -->
             <section id="related-products">
                 <h2>Lignende produkter</h2>
-                <section class="product-grid">
+                <div class="product-grid">
                     <article>
                         <figure>
-                            <img src="https://picsum.photos/200" alt="Produktbilde">
+                            <img src="https://picsum.photos/200" alt="Bilde av produkter">
                             <figcaption>
-                                <h3>Produktnavn</h3>
-                                <p>Pris: 299 kr</p>
+                                <h3>Product name</h3>
+                                <p>Kr 1999</p>
                             </figcaption>
                         </figure>
                     </article>
                     <article>
                         <figure>
-                            <img src="https://picsum.photos/200" alt="Produktbilde">
+                            <img src="https://picsum.photos/200" alt="Bilde av produkter">
                             <figcaption>
-                                <h3>Produktnavn</h3>
-                                <p>Pris: 199 kr</p>
+                                <h3>Product name</h3>
+                                <p>Kr 1999</p>
                             </figcaption>
                         </figure>
                     </article>
                     <article>
                         <figure>
-                            <img src="https://picsum.photos/200" alt="Produktbilde">
+                            <img src="https://picsum.photos/200" alt="Bilde av produkter">
                             <figcaption>
-                                <h3>Produktnavn</h3>
-                                <p>Pris: 399 kr</p>
+                                <h3>Product name</h3>
+                                <p>Kr 1999</p>
                             </figcaption>
                         </figure>
                     </article>
                     <article>
                         <figure>
-                            <img src="https://picsum.photos/200" alt="Produktbilde">
+                            <img src="https://picsum.photos/200" alt="Bilde av produkter">
                             <figcaption>
-                                <h3>Produktnavn</h3>
-                                <p>Pris: 499 kr</p>
+                                <h3>Product name</h3>
+                                <p>Kr 1999</p>
                             </figcaption>
                         </figure>
                     </article>
-                </section>
+                </div>
             </section>
         </main>
 
         <footer>
-            <section id="logo">
+            <div id="logo">
                 <a href="index.html" class="logo">Logo</a>
-                <p>Ingress</p>
-            </section>
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Fringilla vitae quam tempor senectus accumsan tempus vivamus ac.</p>
+            </div>
 
             <section id="kontakt">
                 <h3>KONTAKT</h3>
@@ -132,10 +133,10 @@
             <section id="sosiale-medier">
                 <h3>SOSIALE MEDIER</h3>
                 <ul class="nav">
-                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/feed/" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://no.pinterest.com/" aria-label="Pintrest"><i class="fa-brands fa-pinterest"></i></a></li>
                 </ul>
             </section>
         </footer>

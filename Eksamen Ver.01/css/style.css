@@ -54,6 +54,7 @@ img {
 #header-search button {
     cursor: pointer;
     background-color: #fff;
+    color: #000;
 }
 
 .nav {
@@ -189,7 +190,6 @@ footer ul.nav {
     flex-direction: column;
     gap: 20px;
     margin-bottom: 20px;
-    align-items: flex-start;
 }
 
 #shoppingbag .cart-item div {
@@ -199,21 +199,23 @@ footer ul.nav {
 /* Forms */
 form label {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items:flex-start;
     margin: 10px 0 5px;
 }
 
 form input, form button {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     border: 1px solid #ccc;
     border-radius: 0;
 }
 
 form button {
     background: #000;
-    color: #000;
+    width: auto;
+    color: #ffffff;
     cursor: pointer;
 }
 
